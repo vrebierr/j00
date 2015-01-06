@@ -1,4 +1,5 @@
 #include "Contact.class.hpp"
+#include <cstdlib>
 
 std::string      getInput(void) {
     std::string input;
@@ -6,7 +7,7 @@ std::string      getInput(void) {
     if (!std::getline(std::cin, input))
     {
         std::cout << "Exiting program." << std::endl;
-        exit(0);
+		std::exit(0);
     }
     return input;
 }
