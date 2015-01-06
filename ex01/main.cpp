@@ -19,7 +19,7 @@ int              getValidIndex(int length) {
     if (input.length() > 1 || input[0] < 48 || input[0] >= 48 + length)
     {
         std::cout << "Wrong index. Please try again." << std::endl;
-        input = getValidIndex(length);
+        input = getValidIndex(length) + 48;
     }
     return input[0] - 48;
 }
